@@ -21,3 +21,7 @@ Some things seemed a bit weird to me. I feel like fetching data inside setInterv
 
 
 P.S. HOCs folder is not inside /src by an accident, i know this is bad :)
+
+<img width="1426" alt="image" src="https://github.com/smsarov/finance/assets/47943520/f8281638-b276-4335-89b6-e23a8650b233">
+
+<img width="1432" alt="image" src="https://github.com/smsarov/finance/assets/47943520/40e8e5e7-c42e-4dbe-8f14-f0b4006a6742">
