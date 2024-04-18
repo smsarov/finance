@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+I wanted to make this project like an all-in-one, but I decided not to continue developing it since any further major advancements would require too much time spent on backend features while my main goal was to do frontend.
 
-## Getting Started
+Technologies used:
+  - NextJS (app router, server actions, server components)
+  - React
+  - Typescript
+  - Tailwind CSS
 
-First, run the development server:
+  (There is no server folder in this repo, probably will push it sometime later)
+  - express
+  - Socket.io
+  - Supabase DB (uses PostgreSQL under the hood)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The interface is fully adapted for mobile devises, supports dark and light themes. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The idea of the project was to make a stock market simulator. I wanted to implement binary options as well as traditional buy-cheap-sell-expensive intruments with real time data changing displayed in Chart.
+I managed to create all main features of frontend although I know there are some places which can be written in a better way.
+While making this project, I found out that it lacks truly intresting problems to be solved on frontend and there are a lot of them on backend.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Some things seemed a bit weird to me. I feel like fetching data inside setInterval in a client component is kinda against the nature of NextJS. I planned to host it all on Vercel, but it turned out that I can't do it if I impliment my own custom server which I needed for sockets. Nevertheless, there is a conclusive integration with database performed by server actions only.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+P.S. HOCs folder is not inside /src by an accident, i know this is bad :)
